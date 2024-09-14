@@ -1,5 +1,6 @@
 {
-  "name": "vscode-quick-project-creator",
+  "name": "quick-project-creator",
+  "publisher": "Farseen",
   "displayName": "Quick Project Creator",
   "description": "Quickly create projects with various stacks and frameworks",
   "version": "0.0.1",

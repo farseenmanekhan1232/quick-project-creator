@@ -1,0 +1,76 @@
+{
+  "name": "vscode-quick-project-creator",
+  "displayName": "Quick Project Creator",
+  "description": "Quickly create projects with various stacks and frameworks",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/farseenmanekhan1232/quick-project-creator"
+  },
+  "activationEvents": [
+    "onView:quickProjectCreator.projectList"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "quick-project-creator",
+          "title": "Quick Project Creator",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "quick-project-creator": [
+        {
+          "type": "webview",
+          "id": "quickProjectCreator.projectList",
+          "name": "Project List"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "quickProjectCreator.createProject",
+        "title": "Create Project"
+      },
+      {
+        "command": "quickProjectCreator.addCustomTemplate",
+        "title": "Add Custom Template"
+      },
+      {
+        "command": "quickProjectCreator.deleteAllCustomTemplates",
+        "title": "Delete All Custom Templates"
+      },
+      {
+        "command": "quickProjectCreator.showQuickPick",
+        "title": "Show Quick Pick"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "^14.x.x",
+    "@types/vscode": "^1.60.0",
+    "@typescript-eslint/eslint-plugin": "^4.x.x",
+    "@typescript-eslint/parser": "^4.x.x",
+    "eslint": "^7.x.x",
+    "typescript": "^4.x.x"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  }
+}

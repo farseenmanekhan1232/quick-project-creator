@@ -191,4 +191,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-For more information, please visit our [GitHub repository](https://github.com/yourusername/quick-project-creator) or contact us at support@quickprojectcreator.com.
+For more information, please visit my [GitHub repository](https://github.com/farseenmanekhan1232/quick-project-creator) or contact me at farseenmanekhan1232@gmail.com .

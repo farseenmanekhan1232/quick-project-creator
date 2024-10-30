@@ -1,11 +1,11 @@
-import * as vscode from "vscode";
-import * as path from "path";
 import * as fs from "fs";
+import * as path from "path";
+import * as vscode from "vscode";
 
 import { CustomTemplate, ProjectCategory, ProjectTemplate } from "./types";
 
-import { ProjectCreatorProvider, ProjectItem } from "./views";
 import { projectList } from "./projectList";
+import { ProjectCreatorProvider, ProjectItem } from "./views";
 
 export async function createCustomProject(
   customTemplate: CustomTemplate,

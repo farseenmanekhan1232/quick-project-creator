@@ -1,12 +1,12 @@
 import * as vscode from "vscode";
 import { projectList } from "./projectList";
 import { ProjectTemplate } from "./types";
-import { ProjectCreatorProvider, ProjectItem } from "./views";
 import {
   addCustomTemplate,
   createProject,
   deleteAllCustomTemplates,
 } from "./utils";
+import { ProjectCreatorProvider, ProjectItem } from "./views";
 
 export function activate(context: vscode.ExtensionContext) {
   const projectCreatorProvider = new ProjectCreatorProvider(

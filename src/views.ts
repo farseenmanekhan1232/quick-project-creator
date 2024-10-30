@@ -128,8 +128,9 @@ export class ProjectCreatorProvider
     const templateList = this.customTemplates
       .map(
         (template) => `
-      <li class="flex items-center justify-between py-2">
-        <button class="secondary-button flex-grow text-left" data-template="${template.name}" >
+      <li class="flex items-center justify-between py-2 ">
+        <button class="template-button  flex-grow text-left" data-template="${template.name}" 
+        style="padding-top:0.5rem; padding-bottom:0.5rem">
           ${template.name}
         </button>
         <button class="delete-button ml-2 p-1" data-template="${template.name}" aria-label="Delete ${template.name}">
@@ -238,9 +239,7 @@ export class ProjectCreatorProvider
                 color: var(--secondary-foreground);
             }
 
-            .secondary-button:hover {
-                background-color: var(--accent);
-            }
+       
 
             h2 {
                 font-size: 1.25rem;
@@ -258,13 +257,11 @@ export class ProjectCreatorProvider
                 background-color: transparent;
                 color: var(--foreground);
                 border: none;
-                height: auto;
-                padding: 0;
+                height: 20px;
+                padding:2rem;
+
             }
 
-            .template-button:hover {
-                color: var(--primary);
-            }
 
             .delete-button {
                 color: var(--muted-foreground);
